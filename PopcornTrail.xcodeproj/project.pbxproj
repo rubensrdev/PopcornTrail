@@ -11,6 +11,7 @@
 		45FEA4722D5A6E8000DBA159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FEA46D2D5A6E8000DBA159 /* Assets.xcassets */; };
 		45FEA4732D5A6E8000DBA159 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FEA46E2D5A6E8000DBA159 /* DemoView.swift */; };
 		45FEA4742D5A6E8000DBA159 /* PopcornTrailApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FEA46F2D5A6E8000DBA159 /* PopcornTrailApp.swift */; };
+		45FEA4822D5A7BB800DBA159 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FEA4812D5A7BB800DBA159 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		45FEA46D2D5A6E8000DBA159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45FEA46E2D5A6E8000DBA159 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 		45FEA46F2D5A6E8000DBA159 /* PopcornTrailApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopcornTrailApp.swift; sourceTree = "<group>"; };
+		45FEA4812D5A7BB800DBA159 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				45FEA46E2D5A6E8000DBA159 /* DemoView.swift */,
+				45FEA4812D5A7BB800DBA159 /* LoginView.swift */,
 			);
 			path = iPhone;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45FEA4822D5A7BB800DBA159 /* LoginView.swift in Sources */,
 				45FEA4732D5A6E8000DBA159 /* DemoView.swift in Sources */,
 				45FEA4742D5A6E8000DBA159 /* PopcornTrailApp.swift in Sources */,
 			);
