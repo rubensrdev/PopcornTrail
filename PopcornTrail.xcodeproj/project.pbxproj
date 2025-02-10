@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		45FEA4712D5A6E8000DBA159 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FEA46B2D5A6E8000DBA159 /* Preview Assets.xcassets */; };
 		45FEA4722D5A6E8000DBA159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FEA46D2D5A6E8000DBA159 /* Assets.xcassets */; };
-		45FEA4732D5A6E8000DBA159 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FEA46E2D5A6E8000DBA159 /* ContentView.swift */; };
+		45FEA4732D5A6E8000DBA159 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FEA46E2D5A6E8000DBA159 /* DemoView.swift */; };
 		45FEA4742D5A6E8000DBA159 /* PopcornTrailApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FEA46F2D5A6E8000DBA159 /* PopcornTrailApp.swift */; };
 /* End PBXBuildFile section */
 
@@ -17,7 +17,7 @@
 		45AF6C412D5A67CB00A29620 /* PopcornTrail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopcornTrail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45FEA46B2D5A6E8000DBA159 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		45FEA46D2D5A6E8000DBA159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		45FEA46E2D5A6E8000DBA159 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		45FEA46E2D5A6E8000DBA159 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 		45FEA46F2D5A6E8000DBA159 /* PopcornTrailApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopcornTrailApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,12 +59,108 @@
 		45FEA4702D5A6E8000DBA159 /* PopcornTrail */ = {
 			isa = PBXGroup;
 			children = (
-				45FEA46C2D5A6E8000DBA159 /* Preview Content */,
-				45FEA46D2D5A6E8000DBA159 /* Assets.xcassets */,
-				45FEA46E2D5A6E8000DBA159 /* ContentView.swift */,
 				45FEA46F2D5A6E8000DBA159 /* PopcornTrailApp.swift */,
+				45FEA46D2D5A6E8000DBA159 /* Assets.xcassets */,
+				45FEA46C2D5A6E8000DBA159 /* Preview Content */,
+				45FEA4752D5A738F00DBA159 /* Model */,
+				45FEA4762D5A739700DBA159 /* Network */,
+				45FEA4772D5A73B400DBA159 /* Repository */,
+				45FEA4782D5A73BA00DBA159 /* ViewModel */,
+				45FEA4792D5A73C000DBA159 /* View */,
 			);
 			path = PopcornTrail;
+			sourceTree = "<group>";
+		};
+		45FEA4752D5A738F00DBA159 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		45FEA4762D5A739700DBA159 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		45FEA4772D5A73B400DBA159 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				45FEA4802D5A75DD00DBA159 /* Remote */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		45FEA4782D5A73BA00DBA159 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				45FEA47A2D5A740800DBA159 /* Shared */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		45FEA4792D5A73C000DBA159 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45FEA47F2D5A744000DBA159 /* Components */,
+				45FEA47E2D5A743800DBA159 /* Styles */,
+				45FEA47D2D5A743100DBA159 /* Shared */,
+				45FEA47B2D5A741900DBA159 /* Devices */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		45FEA47A2D5A740800DBA159 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		45FEA47B2D5A741900DBA159 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				45FEA47C2D5A741E00DBA159 /* iPhone */,
+			);
+			path = Devices;
+			sourceTree = "<group>";
+		};
+		45FEA47C2D5A741E00DBA159 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				45FEA46E2D5A6E8000DBA159 /* DemoView.swift */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		45FEA47D2D5A743100DBA159 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		45FEA47E2D5A743800DBA159 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		45FEA47F2D5A744000DBA159 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		45FEA4802D5A75DD00DBA159 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Remote;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45FEA4732D5A6E8000DBA159 /* ContentView.swift in Sources */,
+				45FEA4732D5A6E8000DBA159 /* DemoView.swift in Sources */,
 				45FEA4742D5A6E8000DBA159 /* PopcornTrailApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,7 @@ import SwiftUI
 struct PopcornTrailApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DemoView()
         }
     }
 }
