@@ -6,17 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		45FEA4712D5A6E8000DBA159 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FEA46B2D5A6E8000DBA159 /* Preview Assets.xcassets */; };
+		45FEA4722D5A6E8000DBA159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FEA46D2D5A6E8000DBA159 /* Assets.xcassets */; };
+		45FEA4732D5A6E8000DBA159 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FEA46E2D5A6E8000DBA159 /* ContentView.swift */; };
+		45FEA4742D5A6E8000DBA159 /* PopcornTrailApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FEA46F2D5A6E8000DBA159 /* PopcornTrailApp.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		45AF6C412D5A67CB00A29620 /* PopcornTrail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopcornTrail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45FEA46B2D5A6E8000DBA159 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		45FEA46D2D5A6E8000DBA159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45FEA46E2D5A6E8000DBA159 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		45FEA46F2D5A6E8000DBA159 /* PopcornTrailApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopcornTrailApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		45AF6C432D5A67CB00A29620 /* PopcornTrail */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PopcornTrail;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		45AF6C3E2D5A67CB00A29620 /* Frameworks */ = {
@@ -32,7 +35,7 @@
 		45AF6C382D5A67CB00A29620 = {
 			isa = PBXGroup;
 			children = (
-				45AF6C432D5A67CB00A29620 /* PopcornTrail */,
+				45FEA4702D5A6E8000DBA159 /* PopcornTrail */,
 				45AF6C422D5A67CB00A29620 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +46,25 @@
 				45AF6C412D5A67CB00A29620 /* PopcornTrail.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		45FEA46C2D5A6E8000DBA159 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				45FEA46B2D5A6E8000DBA159 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		45FEA4702D5A6E8000DBA159 /* PopcornTrail */ = {
+			isa = PBXGroup;
+			children = (
+				45FEA46C2D5A6E8000DBA159 /* Preview Content */,
+				45FEA46D2D5A6E8000DBA159 /* Assets.xcassets */,
+				45FEA46E2D5A6E8000DBA159 /* ContentView.swift */,
+				45FEA46F2D5A6E8000DBA159 /* PopcornTrailApp.swift */,
+			);
+			path = PopcornTrail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +81,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				45AF6C432D5A67CB00A29620 /* PopcornTrail */,
 			);
 			name = PopcornTrail;
 			packageProductDependencies = (
@@ -109,6 +128,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45FEA4712D5A6E8000DBA159 /* Preview Assets.xcassets in Resources */,
+				45FEA4722D5A6E8000DBA159 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45FEA4732D5A6E8000DBA159 /* ContentView.swift in Sources */,
+				45FEA4742D5A6E8000DBA159 /* PopcornTrailApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,11 +278,12 @@
 				DEVELOPMENT_TEAM = 8MU6QHY59H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Popcorn Trail";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -268,7 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.ruben.PopcornTrail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -284,11 +308,12 @@
 				DEVELOPMENT_TEAM = 8MU6QHY59H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Popcorn Trail";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,7 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.ruben.PopcornTrail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
