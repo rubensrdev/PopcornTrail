@@ -43,9 +43,9 @@ struct LoginView: View {
 				.clipShape(Capsule())
 				
 				Button {
-					print("Login as a guest")
+					print("Continue as a guest")
 				} label: {
-					Text("Login as a guest")
+					Text("Continue as a guest")
 						.foregroundStyle(.white)
 						.font(.subheadline)
 						.underline(pattern: .solid)

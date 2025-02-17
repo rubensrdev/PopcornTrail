@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		452AB4232D6393EE001026A8 /* RequestTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452AB4222D6393EE001026A8 /* RequestTokenResponse.swift */; };
+		452AB4252D63959B001026A8 /* SessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452AB4242D63959B001026A8 /* SessionResponse.swift */; };
+		452AB4272D6395F3001026A8 /* GuestSessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452AB4262D6395F3001026A8 /* GuestSessionResponse.swift */; };
 		45FEA4712D5A6E8000DBA159 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FEA46B2D5A6E8000DBA159 /* Preview Assets.xcassets */; };
 		45FEA4722D5A6E8000DBA159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FEA46D2D5A6E8000DBA159 /* Assets.xcassets */; };
 		45FEA4732D5A6E8000DBA159 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FEA46E2D5A6E8000DBA159 /* DemoView.swift */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		452AB4222D6393EE001026A8 /* RequestTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTokenResponse.swift; sourceTree = "<group>"; };
+		452AB4242D63959B001026A8 /* SessionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionResponse.swift; sourceTree = "<group>"; };
+		452AB4262D6395F3001026A8 /* GuestSessionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestSessionResponse.swift; sourceTree = "<group>"; };
 		45AF6C412D5A67CB00A29620 /* PopcornTrail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopcornTrail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45FEA46B2D5A6E8000DBA159 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		45FEA46D2D5A6E8000DBA159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,6 +40,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		452AB4212D639365001026A8 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				452AB4222D6393EE001026A8 /* RequestTokenResponse.swift */,
+				452AB4242D63959B001026A8 /* SessionResponse.swift */,
+				452AB4262D6395F3001026A8 /* GuestSessionResponse.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		45AF6C382D5A67CB00A29620 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +92,7 @@
 		45FEA4752D5A738F00DBA159 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				452AB4212D639365001026A8 /* Auth */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -239,8 +256,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452AB4272D6395F3001026A8 /* GuestSessionResponse.swift in Sources */,
 				45FEA4822D5A7BB800DBA159 /* LoginView.swift in Sources */,
+				452AB4252D63959B001026A8 /* SessionResponse.swift in Sources */,
 				45FEA4732D5A6E8000DBA159 /* DemoView.swift in Sources */,
+				452AB4232D6393EE001026A8 /* RequestTokenResponse.swift in Sources */,
 				45FEA4742D5A6E8000DBA159 /* PopcornTrailApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
