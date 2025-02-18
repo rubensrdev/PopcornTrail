@@ -7,7 +7,10 @@
 
 import Foundation
 
+/// Gestiona la configuración del API de TMDb
 struct APIConfig {
+	
+	/// Instancia compartida (singleton) para acceso global a la configuración del API
 	static let shared = APIConfig()
 	
 	/// URL base del API de TMDb
