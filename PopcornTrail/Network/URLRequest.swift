@@ -7,13 +7,16 @@
 
 import Foundation
 
+import Foundation
+
 extension URLRequest {
 	
-	/// Crea una solicitud HTTP `GET para obtener un `request_token`
+	/// Crea una solicitud HTTP `GET` para obtener un `request_token`
 	static func requestToken() -> URLRequest {
 		var request = URLRequest(url: .requestToken())
 		request.httpMethod = "GET"
 		request.setValue("application/json", forHTTPHeaderField: "Accept")
+		request.setValue("Bearer \(APIConfig.shared.apiKey)", forHTTPHeaderField: "Authorization") 
 		return request
 	}
 	
@@ -23,6 +26,7 @@ extension URLRequest {
 		request.httpMethod = "POST"
 		request.setValue("application/json", forHTTPHeaderField: "Accept")
 		request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+		request.setValue("Bearer \(APIConfig.shared.apiKey)", forHTTPHeaderField: "Authorization")
 		
 		let body = ["request_token": requestToken]
 		request.httpBody = try? JSONEncoder().encode(body)
@@ -31,11 +35,11 @@ extension URLRequest {
 	}
 	
 	/// Crea una solicitud HTTP `GET` para generar una sesión de invitado
-	   static func guestSession() -> URLRequest {
-		   var request = URLRequest(url: URL.guestSession())
-		   request.httpMethod = "GET"
-		   request.setValue("application/json", forHTTPHeaderField: "Accept")
-		   return request
-	   }
-	
+	static func guestSession() -> URLRequest {
+		var request = URLRequest(url: URL.guestSession())
+		request.httpMethod = "GET"
+		request.setValue("application/json", forHTTPHeaderField: "Accept")
+		request.setValue("Bearer \(APIConfig.shared.apiKey)", forHTTPHeaderField: "Authorization")
+		return request
+	}
 }

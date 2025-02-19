@@ -16,6 +16,8 @@ extension NetworkInteractor {
 	
 	/// Ejecuta la solicitud HTTP y decodifica la respuesta en el tipo especificado
 	func executeRequest<T: Codable>(_ request: URLRequest, type: T.Type) async throws -> T {
+		print("✅ [NetworkService] Ejecutando solicitud a la URL: \(request.url?.absoluteString ?? "URL no válida")")
+		print("✅ [NetworkService] Headers: \(request.allHTTPHeaderFields ?? [:])")
 		let (data, response) = try await session.data(for: request)
 		
 		guard let httpResponse = response as? HTTPURLResponse else {

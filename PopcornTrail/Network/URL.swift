@@ -7,16 +7,17 @@
 
 import Foundation
 
+import Foundation
+
 extension URL {
 	
 	/// Construcción de URL para solicitar el `request_token`
 	static func requestToken() -> URL {
 		APIConfig.shared.baseURL
 			.appending(path: AuthenticationEndpoints.requestToken.rawValue)
-			.appending(queryItems: [.apiKey()])
 	}
 	
-	/// Contrucción de URL para crear una sesión con el `request_token`
+	/// Construcción de URL para crear una sesión con el `request_token`
 	static func createSession() -> URL {
 		APIConfig.shared.baseURL
 			.appending(path: AuthenticationEndpoints.createSession.rawValue)
@@ -26,9 +27,7 @@ extension URL {
 	static func guestSession() -> URL {
 		APIConfig.shared.baseURL
 			.appending(path: AuthenticationEndpoints.guestSession.rawValue)
-			.appending(queryItems: [.apiKey()])
 	}
-	
 }
 
 extension URLQueryItem {
