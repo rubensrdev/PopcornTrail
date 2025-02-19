@@ -8,7 +8,7 @@
 import Foundation
 
 /// Protocolo base para gestionar las solicitudes de red
-protocol NetworkInteractor {
+protocol NetworkInteractor: Sendable {
 	var session: URLSession { get }
 }
 

@@ -18,6 +18,7 @@
 		456196412D64973B003CFD85 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456196402D64973B003CFD85 /* NetworkError.swift */; };
 		456196432D649B40003CFD85 /* NetworkInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456196422D649B40003CFD85 /* NetworkInteractor.swift */; };
 		456196452D64A1D6003CFD85 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456196442D64A1D6003CFD85 /* NetworkService.swift */; };
+		458BBE7D2D662F4D00EE8F22 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458BBE7C2D662F4D00EE8F22 /* LoginViewModel.swift */; };
 		45FEA4712D5A6E8000DBA159 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FEA46B2D5A6E8000DBA159 /* Preview Assets.xcassets */; };
 		45FEA4722D5A6E8000DBA159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FEA46D2D5A6E8000DBA159 /* Assets.xcassets */; };
 		45FEA4732D5A6E8000DBA159 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FEA46E2D5A6E8000DBA159 /* DemoView.swift */; };
@@ -38,6 +39,7 @@
 		456196402D64973B003CFD85 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		456196422D649B40003CFD85 /* NetworkInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInteractor.swift; sourceTree = "<group>"; };
 		456196442D64A1D6003CFD85 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		458BBE7C2D662F4D00EE8F22 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		45AF6C412D5A67CB00A29620 /* PopcornTrail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopcornTrail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45FEA46B2D5A6E8000DBA159 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		45FEA46D2D5A6E8000DBA159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 				456196402D64973B003CFD85 /* NetworkError.swift */,
 			);
 			path = Enum;
+			sourceTree = "<group>";
+		};
+		458BBE7B2D662F3200EE8F22 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				458BBE7C2D662F4D00EE8F22 /* LoginViewModel.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		45AF6C382D5A67CB00A29620 = {
@@ -148,6 +158,7 @@
 		45FEA4782D5A73BA00DBA159 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				458BBE7B2D662F3200EE8F22 /* Auth */,
 				45FEA47A2D5A740800DBA159 /* Shared */,
 			);
 			path = ViewModel;
@@ -298,6 +309,7 @@
 				452AB42F2D639E5C001026A8 /* APIConfig.swift in Sources */,
 				452AB4232D6393EE001026A8 /* RequestTokenResponse.swift in Sources */,
 				45FEA4742D5A6E8000DBA159 /* PopcornTrailApp.swift in Sources */,
+				458BBE7D2D662F4D00EE8F22 /* LoginViewModel.swift in Sources */,
 				452AB42C2D639937001026A8 /* URL.swift in Sources */,
 				456196412D64973B003CFD85 /* NetworkError.swift in Sources */,
 				456196432D649B40003CFD85 /* NetworkInteractor.swift in Sources */,

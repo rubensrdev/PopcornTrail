@@ -8,7 +8,7 @@
 import Foundation
 
 /// Este protocolo define las operaciones de autenticación con TMDb
-protocol AuthenticationRepositoryProtocol {
+protocol AuthenticationRepositoryProtocol: Sendable {
 	/// Solicita un `request_token` para autenticación de usuario
 	func requestToken() async throws-> RequestTokenResponse
 	/// Crea una sesión con el `request_token` autorizado
