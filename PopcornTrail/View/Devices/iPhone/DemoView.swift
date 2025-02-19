@@ -30,6 +30,7 @@ struct DemoView: View {
 					.opacity(0.7)
 			)
 			.clipShape(RoundedRectangle(cornerRadius: 10))
+			.shadow(radius: 10)
 		}
 		.padding()
 	}

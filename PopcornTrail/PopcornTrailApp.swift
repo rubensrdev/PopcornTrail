@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct PopcornTrailApp: App {
+	
+	@State var loginVM = LoginViewModel()
+	
     var body: some Scene {
         WindowGroup {
 			LoginView()
+				.environment(loginVM)
         }
     }
 }

@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct LoginView: View {
+	
+	@Environment(LoginViewModel.self) private var vm
+	
     var body: some View {
 		ZStack {
 			Color.black
 				.ignoresSafeArea()
 				.opacity(0.8)
 			VStack {
-				Text("Welcome to Popcorn Trail 🍿")
+				DemoView()
+				Text("Welcome to the App")
 					.bold()
 					.font(.title)
 					.foregroundStyle(.white)
@@ -22,6 +26,9 @@ struct LoginView: View {
 				
 				Button {
 					print("Login with TMDb")
+					Task {
+						await vm.login()
+					}
 				} label: {
 					Text("Login with TMDb")
 						.font(.headline)
@@ -44,6 +51,9 @@ struct LoginView: View {
 				
 				Button {
 					print("Continue as a guest")
+					Task {
+						await vm.loginAsGuest()
+					}
 				} label: {
 					Text("Continue as a guest")
 						.foregroundStyle(.white)
@@ -60,4 +70,5 @@ struct LoginView: View {
 
 #Preview {
     LoginView()
+		.environment(LoginViewModel())
 }
