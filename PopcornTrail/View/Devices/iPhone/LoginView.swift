@@ -1,80 +1,117 @@
-//
-//  LoginView.swift
-//  PopcornTrail
-//
-//  Created by Rubén Segura Romo on 10/2/25.
-//
-
 import SwiftUI
 
 struct LoginView: View {
 	
 	@Environment(LoginViewModel.self) private var vm
 	
-    var body: some View {
+	var body: some View {
 		ZStack {
 			Color.black
 				.ignoresSafeArea()
-				.opacity(0.8)
-			if vm.isAuthenticating {
-				ProgressView()
-			} else if vm.isLoggedIn {
-				Text("Logged in!")
-			} else {
-				VStack {
-					DemoView()
-					Text("Welcome to the App")
-						.bold()
-						.font(.title)
+				.opacity(0.85)
+			
+			VStack {
+				Spacer()
+				
+				if vm.isAuthenticating {
+					ProgressView("Authenticating...")
+						.font(.title2)
 						.foregroundStyle(.white)
-						.fontDesign(.rounded)
-					
-					Button {
-						print("Login with TMDb")
-						Task {
-							await vm.login()
-						}
-					} label: {
-						Text("Login with TMDb")
-							.font(.headline)
-					}
-					.padding(10)
-					.foregroundStyle(.purple)
-					.background(.white.opacity(0.9))
-					.clipShape(Capsule())
-					
-					Button {
-						print("Register on TMDb")
-					} label: {
-						Text("Register on TMDb")
-							.font(.headline)
-					}
-					.padding(10)
-					.foregroundStyle(.purple)
-					.background(.white.opacity(0.9))
-					.clipShape(Capsule())
-					
-					Button {
-						print("Continue as a guest")
-						Task {
-							await vm.loginAsGuest()
-						}
-					} label: {
-						Text("Continue as a guest")
-							.foregroundStyle(.white)
-							.font(.subheadline)
-							.underline(pattern: .solid)
-							.italic()
-					}
-					.padding(10)
-
+						.padding()
+				} else if vm.isLoggedIn {
+					loggedInView
+				} else {
+					loginOptionsView
+				}
+				
+				Spacer()
+				
+				if !vm.errorMessage.isEmpty {
+					Text(vm.errorMessage)
+						.font(.footnote)
+						.foregroundStyle(.red)
+						.padding(.bottom, 20)
 				}
 			}
+			.padding()
 		}
-    }
+		.animation(.easeInOut, value: vm.isAuthenticating)
+	}
+	
+	/// Vista cuando el usuario ha iniciado sesión
+	private var loggedInView: some View {
+		VStack(spacing: 12) {
+			Image(systemName: "checkmark.circle.fill")
+				.resizable()
+				.scaledToFit()
+				.frame(width: 50)
+				.foregroundStyle(.green)
+			
+			Text("Successfully Logged In!")
+				.font(.title2)
+				.foregroundStyle(.white)
+				.fontWeight(.semibold)
+		}
+		.padding()
+	}
+	
+	/// Vista con opciones de login
+	private var loginOptionsView: some View {
+		VStack(spacing: 20) {
+			DemoView()
+			
+			Text("Welcome to Popcorn Trail")
+				.font(.title)
+				.foregroundStyle(.white)
+				.fontDesign(.rounded)
+				.bold()
+			
+			loginButton
+			registerButton
+			guestButton
+		}
+		.padding(.horizontal)
+	}
+	
+	private var loginButton: some View {
+		Button(action: { Task { await vm.login() } }) {
+			Text("Login with TMDb")
+				.font(.headline)
+				.frame(maxWidth: .infinity)
+				.padding()
+				.background(Color.white.opacity(0.9))
+				.foregroundStyle(.purple)
+				.clipShape(Capsule())
+		}
+		.padding(.horizontal)
+	}
+	
+	private var registerButton: some View {
+		Button(action: { /* Acción de registro */ }) {
+			Text("Register on TMDb")
+				.font(.headline)
+				.frame(maxWidth: .infinity)
+				.padding()
+				.background(Color.white.opacity(0.9))
+				.foregroundStyle(.purple)
+				.clipShape(Capsule())
+		}
+		.padding(.horizontal)
+	}
+	
+	private var guestButton: some View {
+		Button(action: { Task { await vm.loginAsGuest() } }) {
+			Text("Continue as Guest")
+				.font(.subheadline)
+				.italic()
+				.underline()
+				.foregroundStyle(.white)
+		}
+		.padding(.top, 5)
+	}
 }
 
 #Preview {
-    LoginView()
+	LoginView()
 		.environment(LoginViewModel())
 }
