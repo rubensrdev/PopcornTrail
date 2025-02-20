@@ -89,6 +89,15 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		458BBE822D66427A00EE8F22 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				45FEA4812D5A7BB800DBA159 /* LoginView.swift */,
+				45FEA46E2D5A6E8000DBA159 /* DemoView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		45AF6C382D5A67CB00A29620 = {
 			isa = PBXGroup;
 			children = (
@@ -196,8 +205,7 @@
 		45FEA47C2D5A741E00DBA159 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
-				45FEA46E2D5A6E8000DBA159 /* DemoView.swift */,
-				45FEA4812D5A7BB800DBA159 /* LoginView.swift */,
+				458BBE822D66427A00EE8F22 /* Login */,
 			);
 			path = iPhone;
 			sourceTree = "<group>";
