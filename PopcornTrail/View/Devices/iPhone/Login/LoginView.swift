@@ -37,6 +37,19 @@ struct LoginView: View {
 							.font(.title2)
 							.foregroundStyle(.white)
 							.fontWeight(.semibold)
+						
+						Button(action: {
+							vm.logout()
+						}) {
+							Text("Log Out")
+								.font(.headline)
+								.frame(maxWidth: .infinity)
+								.padding()
+								.background(Color.red.opacity(0.8))
+								.foregroundStyle(.white)
+								.clipShape(Capsule())
+						}
+						.padding(.horizontal)
 					}
 					.padding()
 				} else {

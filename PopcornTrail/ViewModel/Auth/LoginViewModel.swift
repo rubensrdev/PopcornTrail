@@ -8,11 +8,21 @@ final class LoginViewModel {
 	var errorMessage = ""
 	var isLoggedIn = false
 	
+	let sessionIDKey = "TMDbSessionID"
+	
 	private let authRepository: AuthenticationRepositoryProtocol
 	private let webAuthManager = WebAuthManager()
 	
+	
 	init(authRepository: AuthenticationRepositoryProtocol = AuthenticationRepository()) {
 		self.authRepository = authRepository
+		checkForSavedSession()
+	}
+	
+	private func checkForSavedSession() {
+		if let sessionID = KeychainManager.retrieve(forKey: sessionIDKey) {
+			isLoggedIn = true
+		}
 	}
 	
 	/// Inicia el proceso de autenticación con TMDb.
@@ -57,11 +67,17 @@ final class LoginViewModel {
 	private func storeSession(_ sessionID: String) {
 		isAuthenticating = false
 		isLoggedIn = true
+		KeychainManager.save(sessionID, forKey: sessionIDKey)
 	}
 	
 	/// Manejo de errores en la autenticación.
 	private func handleError(_ error: Error) {
 		isAuthenticating = false
 		errorMessage = error.localizedDescription
+	}
+	
+	func logout() {
+		KeychainManager.delete(forKey: sessionIDKey)
+		isLoggedIn = false
 	}
 }
