@@ -24,6 +24,8 @@
 		45E9FBF52D688D7700ED3786 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E9FBF42D688D7700ED3786 /* ExploreView.swift */; };
 		45E9FBF92D688E2F00ED3786 /* SeriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E9FBF82D688E2F00ED3786 /* SeriesView.swift */; };
 		45E9FBFB2D688FAC00ED3786 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E9FBFA2D688FAC00ED3786 /* MoviesView.swift */; };
+		45E9FBFE2D68943B00ED3786 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E9FBFD2D68943B00ED3786 /* Movie.swift */; };
+		45E9FC002D6894D200ED3786 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E9FBFF2D6894D200ED3786 /* MovieResponse.swift */; };
 		45FEA4712D5A6E8000DBA159 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FEA46B2D5A6E8000DBA159 /* Preview Assets.xcassets */; };
 		45FEA4722D5A6E8000DBA159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FEA46D2D5A6E8000DBA159 /* Assets.xcassets */; };
 		45FEA4732D5A6E8000DBA159 /* LogoInLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FEA46E2D5A6E8000DBA159 /* LogoInLoginView.swift */; };
@@ -51,6 +53,8 @@
 		45E9FBF42D688D7700ED3786 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		45E9FBF82D688E2F00ED3786 /* SeriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesView.swift; sourceTree = "<group>"; };
 		45E9FBFA2D688FAC00ED3786 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
+		45E9FBFD2D68943B00ED3786 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		45E9FBFF2D6894D200ED3786 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
 		45FEA46B2D5A6E8000DBA159 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		45FEA46D2D5A6E8000DBA159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45FEA46E2D5A6E8000DBA159 /* LogoInLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoInLoginView.swift; sourceTree = "<group>"; };
@@ -156,6 +160,15 @@
 			path = Series;
 			sourceTree = "<group>";
 		};
+		45E9FBFC2D68936F00ED3786 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				45E9FBFD2D68943B00ED3786 /* Movie.swift */,
+				45E9FBFF2D6894D200ED3786 /* MovieResponse.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
 		45FEA46C2D5A6E8000DBA159 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +197,7 @@
 		45FEA4752D5A738F00DBA159 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				45E9FBFC2D68936F00ED3786 /* Movies */,
 				452AB4212D639365001026A8 /* Auth */,
 			);
 			path = Model;
@@ -357,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				452AB4272D6395F3001026A8 /* GuestSessionResponse.swift in Sources */,
+				45E9FC002D6894D200ED3786 /* MovieResponse.swift in Sources */,
 				45FEA4822D5A7BB800DBA159 /* LoginView.swift in Sources */,
 				452AB4252D63959B001026A8 /* SessionResponse.swift in Sources */,
 				452AB42A2D6398B7001026A8 /* AuthenticationEndpoints.swift in Sources */,
@@ -370,6 +385,7 @@
 				45E9FBF52D688D7700ED3786 /* ExploreView.swift in Sources */,
 				452AB42C2D639937001026A8 /* URL.swift in Sources */,
 				458BBE812D663F9A00EE8F22 /* WebAuthManager.swift in Sources */,
+				45E9FBFE2D68943B00ED3786 /* Movie.swift in Sources */,
 				456196412D64973B003CFD85 /* NetworkError.swift in Sources */,
 				456196432D649B40003CFD85 /* NetworkInteractor.swift in Sources */,
 				456196452D64A1D6003CFD85 /* NetworkService.swift in Sources */,
