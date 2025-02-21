@@ -21,9 +21,12 @@
 		458BBE7D2D662F4D00EE8F22 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458BBE7C2D662F4D00EE8F22 /* LoginViewModel.swift */; };
 		458BBE812D663F9A00EE8F22 /* WebAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458BBE802D663F9A00EE8F22 /* WebAuthManager.swift */; };
 		45E9FBF02D6737C600ED3786 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E9FBEF2D6737C600ED3786 /* KeychainManager.swift */; };
+		45E9FBF52D688D7700ED3786 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E9FBF42D688D7700ED3786 /* ExploreView.swift */; };
+		45E9FBF92D688E2F00ED3786 /* SeriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E9FBF82D688E2F00ED3786 /* SeriesView.swift */; };
+		45E9FBFB2D688FAC00ED3786 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E9FBFA2D688FAC00ED3786 /* MoviesView.swift */; };
 		45FEA4712D5A6E8000DBA159 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FEA46B2D5A6E8000DBA159 /* Preview Assets.xcassets */; };
 		45FEA4722D5A6E8000DBA159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FEA46D2D5A6E8000DBA159 /* Assets.xcassets */; };
-		45FEA4732D5A6E8000DBA159 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FEA46E2D5A6E8000DBA159 /* DemoView.swift */; };
+		45FEA4732D5A6E8000DBA159 /* LogoInLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FEA46E2D5A6E8000DBA159 /* LogoInLoginView.swift */; };
 		45FEA4742D5A6E8000DBA159 /* PopcornTrailApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FEA46F2D5A6E8000DBA159 /* PopcornTrailApp.swift */; };
 		45FEA4822D5A7BB800DBA159 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FEA4812D5A7BB800DBA159 /* LoginView.swift */; };
 /* End PBXBuildFile section */
@@ -45,9 +48,12 @@
 		458BBE802D663F9A00EE8F22 /* WebAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAuthManager.swift; sourceTree = "<group>"; };
 		45AF6C412D5A67CB00A29620 /* PopcornTrail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopcornTrail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E9FBEF2D6737C600ED3786 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		45E9FBF42D688D7700ED3786 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		45E9FBF82D688E2F00ED3786 /* SeriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesView.swift; sourceTree = "<group>"; };
+		45E9FBFA2D688FAC00ED3786 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
 		45FEA46B2D5A6E8000DBA159 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		45FEA46D2D5A6E8000DBA159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		45FEA46E2D5A6E8000DBA159 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
+		45FEA46E2D5A6E8000DBA159 /* LogoInLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoInLoginView.swift; sourceTree = "<group>"; };
 		45FEA46F2D5A6E8000DBA159 /* PopcornTrailApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopcornTrailApp.swift; sourceTree = "<group>"; };
 		45FEA4812D5A7BB800DBA159 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				45FEA4812D5A7BB800DBA159 /* LoginView.swift */,
-				45FEA46E2D5A6E8000DBA159 /* DemoView.swift */,
+				45FEA46E2D5A6E8000DBA159 /* LogoInLoginView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -122,6 +128,32 @@
 				45E9FBEF2D6737C600ED3786 /* KeychainManager.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		45E9FBF32D688D6700ED3786 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				45E9FBF42D688D7700ED3786 /* ExploreView.swift */,
+				45E9FBF72D688E0E00ED3786 /* Series */,
+				45E9FBF62D688E0200ED3786 /* Movies */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		45E9FBF62D688E0200ED3786 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				45E9FBFA2D688FAC00ED3786 /* MoviesView.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		45E9FBF72D688E0E00ED3786 /* Series */ = {
+			isa = PBXGroup;
+			children = (
+				45E9FBF82D688E2F00ED3786 /* SeriesView.swift */,
+			);
+			path = Series;
 			sourceTree = "<group>";
 		};
 		45FEA46C2D5A6E8000DBA159 /* Preview Content */ = {
@@ -216,6 +248,7 @@
 		45FEA47C2D5A741E00DBA159 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				45E9FBF32D688D6700ED3786 /* Explore */,
 				458BBE822D66427A00EE8F22 /* Login */,
 			);
 			path = iPhone;
@@ -327,17 +360,20 @@
 				45FEA4822D5A7BB800DBA159 /* LoginView.swift in Sources */,
 				452AB4252D63959B001026A8 /* SessionResponse.swift in Sources */,
 				452AB42A2D6398B7001026A8 /* AuthenticationEndpoints.swift in Sources */,
-				45FEA4732D5A6E8000DBA159 /* DemoView.swift in Sources */,
+				45FEA4732D5A6E8000DBA159 /* LogoInLoginView.swift in Sources */,
+				45E9FBFB2D688FAC00ED3786 /* MoviesView.swift in Sources */,
 				452AB42F2D639E5C001026A8 /* APIConfig.swift in Sources */,
 				45E9FBF02D6737C600ED3786 /* KeychainManager.swift in Sources */,
 				452AB4232D6393EE001026A8 /* RequestTokenResponse.swift in Sources */,
 				45FEA4742D5A6E8000DBA159 /* PopcornTrailApp.swift in Sources */,
 				458BBE7D2D662F4D00EE8F22 /* LoginViewModel.swift in Sources */,
+				45E9FBF52D688D7700ED3786 /* ExploreView.swift in Sources */,
 				452AB42C2D639937001026A8 /* URL.swift in Sources */,
 				458BBE812D663F9A00EE8F22 /* WebAuthManager.swift in Sources */,
 				456196412D64973B003CFD85 /* NetworkError.swift in Sources */,
 				456196432D649B40003CFD85 /* NetworkInteractor.swift in Sources */,
 				456196452D64A1D6003CFD85 /* NetworkService.swift in Sources */,
+				45E9FBF92D688E2F00ED3786 /* SeriesView.swift in Sources */,
 				4561963F2D648F7C003CFD85 /* URLRequest.swift in Sources */,
 				4546BEB82D662A1E00EBB238 /* AuthenticationRepository.swift in Sources */,
 			);

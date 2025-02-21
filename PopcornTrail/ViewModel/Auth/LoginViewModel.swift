@@ -20,7 +20,7 @@ final class LoginViewModel {
 	}
 	
 	private func checkForSavedSession() {
-		if let sessionID = KeychainManager.retrieve(forKey: sessionIDKey) {
+		if let _ = KeychainManager.retrieve(forKey: sessionIDKey) {
 			isLoggedIn = true
 		}
 	}

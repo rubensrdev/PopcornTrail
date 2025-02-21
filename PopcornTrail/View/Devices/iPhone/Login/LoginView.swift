@@ -54,7 +54,7 @@ struct LoginView: View {
 					.padding()
 				} else {
 					VStack(spacing: 20) {
-						DemoView()
+						LogoInLoginView()
 						
 						Text("Welcome to Popcorn Trail")
 							.font(.title)
