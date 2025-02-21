@@ -26,6 +26,7 @@
 		45E9FBFB2D688FAC00ED3786 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E9FBFA2D688FAC00ED3786 /* MoviesView.swift */; };
 		45E9FBFE2D68943B00ED3786 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E9FBFD2D68943B00ED3786 /* Movie.swift */; };
 		45E9FC002D6894D200ED3786 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E9FBFF2D6894D200ED3786 /* MovieResponse.swift */; };
+		45E9FC022D68980C00ED3786 /* MoviesEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E9FC012D68980C00ED3786 /* MoviesEndpoints.swift */; };
 		45FEA4712D5A6E8000DBA159 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FEA46B2D5A6E8000DBA159 /* Preview Assets.xcassets */; };
 		45FEA4722D5A6E8000DBA159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FEA46D2D5A6E8000DBA159 /* Assets.xcassets */; };
 		45FEA4732D5A6E8000DBA159 /* LogoInLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FEA46E2D5A6E8000DBA159 /* LogoInLoginView.swift */; };
@@ -55,6 +56,7 @@
 		45E9FBFA2D688FAC00ED3786 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
 		45E9FBFD2D68943B00ED3786 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		45E9FBFF2D6894D200ED3786 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
+		45E9FC012D68980C00ED3786 /* MoviesEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesEndpoints.swift; sourceTree = "<group>"; };
 		45FEA46B2D5A6E8000DBA159 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		45FEA46D2D5A6E8000DBA159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45FEA46E2D5A6E8000DBA159 /* LogoInLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoInLoginView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				452AB4292D6398B7001026A8 /* AuthenticationEndpoints.swift */,
 				456196402D64973B003CFD85 /* NetworkError.swift */,
+				45E9FC012D68980C00ED3786 /* MoviesEndpoints.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				45FEA4742D5A6E8000DBA159 /* PopcornTrailApp.swift in Sources */,
 				458BBE7D2D662F4D00EE8F22 /* LoginViewModel.swift in Sources */,
 				45E9FBF52D688D7700ED3786 /* ExploreView.swift in Sources */,
+				45E9FC022D68980C00ED3786 /* MoviesEndpoints.swift in Sources */,
 				452AB42C2D639937001026A8 /* URL.swift in Sources */,
 				458BBE812D663F9A00EE8F22 /* WebAuthManager.swift in Sources */,
 				45E9FBFE2D68943B00ED3786 /* Movie.swift in Sources */,

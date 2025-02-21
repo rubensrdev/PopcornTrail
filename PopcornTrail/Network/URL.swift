@@ -28,6 +28,11 @@ extension URL {
 		APIConfig.shared.baseURL
 			.appending(path: AuthenticationEndpoints.guestSession.rawValue)
 	}
+	
+	/// Construcción de URL para consultar películas populares
+	static func popularMovies() -> URL {
+		APIConfig.shared.baseURL.appending(path: MoviesEndpoints.popular.rawValue)
+	}
 }
 
 extension URLQueryItem {
