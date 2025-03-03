@@ -44,7 +44,7 @@ extension URLRequest {
 	}
 	
 	/// Crea una solicitud HTTP `GET` para obtener un listado de películas populares
-	static func getPopularMoview() -> URLRequest {
+	static func getPopularMovies() -> URLRequest {
 		var request = URLRequest(url: .popularMovies())
 		request.httpMethod = "GET"
 		request.setValue("application/json", forHTTPHeaderField: "Accept")
