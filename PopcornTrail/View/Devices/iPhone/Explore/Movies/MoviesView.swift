@@ -10,7 +10,7 @@ import SwiftUI
 struct MoviesView: View {
 	
 	@Environment(LoginViewModel.self) private var loginVM
-	@State private var vm = MoviesViewModel()
+	@State private var vm = MoviesViewModel(repository: MovieRepositoryPreview())
 	
 	var body: some View {
 		NavigationStack {
@@ -41,7 +41,6 @@ struct MoviesView: View {
 														.scaledToFill()
 														.frame(width: 150, height: 225)
 														.clipShape(RoundedRectangle(cornerRadius: 12))
-														
 												} placeholder: {
 													ProgressView()
 														.frame(width: 150, height: 225)
