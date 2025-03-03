@@ -23,15 +23,24 @@ struct MoviesView: View {
 						.multilineTextAlignment(.center)
 						.padding()
 				} else {
-					List(vm.popularMovies) { movie in
-						Text(movie.title)
+					VStack {
+						Text("Popular Movies")
+							.font(.title2)
+							.fontDesign(.rounded)
+							.fontWeight(.semibold)
+							.frame(maxWidth: .infinity, alignment: .leading)
+							.padding(.leading, 16)
+						ScrollView(.horizontal) {
+							LazyHStack(spacing: 16) {
+								ForEach(vm.popularMovies) { movie in
+									Text(movie.title)
+								}
+							}
+							.padding(.horizontal)
+						}
 					}
-					.scrollContentBackground(.hidden)
-					.background(Color.clear)
-					
 				}
 			}
-			.navigationTitle("Movies")
 			.toolbar {
 				ToolbarItem(placement: .topBarTrailing) {
 					Button {
@@ -43,6 +52,9 @@ struct MoviesView: View {
 					
 				}
 			}
+		}
+		.task {
+			await vm.loadPopularMovies()
 		}
 	}
 }
