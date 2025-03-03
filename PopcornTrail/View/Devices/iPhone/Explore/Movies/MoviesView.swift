@@ -23,20 +23,47 @@ struct MoviesView: View {
 						.multilineTextAlignment(.center)
 						.padding()
 				} else {
-					VStack {
-						Text("Popular Movies")
-							.font(.title2)
-							.fontDesign(.rounded)
-							.fontWeight(.semibold)
-							.frame(maxWidth: .infinity, alignment: .leading)
-							.padding(.leading, 16)
-						ScrollView(.horizontal) {
-							LazyHStack(spacing: 16) {
-								ForEach(vm.popularMovies) { movie in
-									Text(movie.title)
+					ScrollView {
+						VStack {
+							Text("Popular Movies")
+								.font(.title2)
+								.fontDesign(.rounded)
+								.fontWeight(.semibold)
+								.frame(maxWidth: .infinity, alignment: .leading)
+								.padding(.leading, 16)
+							ScrollView(.horizontal) {
+								LazyHStack(spacing: 16) {
+									ForEach(vm.popularMovies) { movie in
+										VStack {
+											if let url = movie.posterURL {
+												AsyncImage(url: url) { image in
+													image.resizable()
+														.scaledToFill()
+														.frame(width: 150, height: 225)
+														.clipShape(RoundedRectangle(cornerRadius: 12))
+														
+												} placeholder: {
+													ProgressView()
+														.frame(width: 150, height: 225)
+												}
+											} else {
+												Image(systemName: "film")
+													.resizable()
+													.scaledToFit()
+													.frame(width: 100, height: 150)
+													.foregroundColor(.gray.opacity(0.7))
+											}
+											Text(movie.title)
+												.font(.headline)
+												.fontDesign(.rounded)
+												.multilineTextAlignment(.center)
+												.frame(width: 100)
+										}
+										.padding(8)
+									}
 								}
+								.padding(.horizontal)
 							}
-							.padding(.horizontal)
 						}
 					}
 				}
