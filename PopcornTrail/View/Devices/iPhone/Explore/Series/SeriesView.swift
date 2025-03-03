@@ -9,15 +9,11 @@ import SwiftUI
 
 struct SeriesView: View {
     var body: some View {
-		ZStack {
-			Color.black
-				.ignoresSafeArea()
-				.opacity(0.85)
-			VStack {
+		NavigationStack {
+			Group {
 				Text("Series")
 					.font(.largeTitle)
 					.bold()
-					.foregroundColor(.white)
 			}
 		}
     }

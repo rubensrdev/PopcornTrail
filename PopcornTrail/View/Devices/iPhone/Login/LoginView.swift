@@ -25,33 +25,6 @@ struct LoginView: View {
 						.font(.title2)
 						.foregroundStyle(.white)
 						.padding()
-				} else if vm.isLoggedIn {
-					VStack(spacing: 12) {
-						Image(systemName: "checkmark.circle.fill")
-							.resizable()
-							.scaledToFit()
-							.frame(width: 50)
-							.foregroundStyle(.green)
-						
-						Text("Successfully Logged In!")
-							.font(.title2)
-							.foregroundStyle(.white)
-							.fontWeight(.semibold)
-						
-						Button(action: {
-							vm.logout()
-						}) {
-							Text("Log Out")
-								.font(.headline)
-								.frame(maxWidth: .infinity)
-								.padding()
-								.background(Color.red.opacity(0.8))
-								.foregroundStyle(.white)
-								.clipShape(Capsule())
-						}
-						.padding(.horizontal)
-					}
-					.padding()
 				} else {
 					VStack(spacing: 20) {
 						LogoInLoginView()
@@ -76,7 +49,9 @@ struct LoginView: View {
 						}
 						.padding(.horizontal)
 						
-						Button(action: { /* Acción de registro */ }) {
+						Button(action: {
+							// TODO: pendiente llevar al usuario al registro
+						}) {
 							Text("Register on TMDb")
 								.font(.headline)
 								.frame(maxWidth: .infinity)

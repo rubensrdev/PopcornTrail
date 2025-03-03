@@ -10,12 +10,19 @@ import SwiftUI
 @main
 struct PopcornTrailApp: App {
 	
-	@State var loginVM = LoginViewModel()
+	@State private var loginVM = LoginViewModel()
 	
     var body: some Scene {
         WindowGroup {
-			LoginView()
-				.environment(loginVM)
+			if loginVM.isLoggedIn {
+				ExploreView()
+					.environment(loginVM)
+					.transition(.opacity)
+			} else {
+				LoginView()
+					.environment(loginVM)
+					.transition(.opacity)
+			}
         }
     }
 }

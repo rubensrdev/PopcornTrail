@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ExploreView: View {
+	@Environment(LoginViewModel.self) private var loginVM
     var body: some View {
 		TabView {
 			MoviesView()
@@ -19,11 +20,10 @@ struct ExploreView: View {
 					Label("Series", systemImage: "tv.fill")
 				}
 		}
-		.tint(.white)
-		.onAppear { UITabBar.appearance().unselectedItemTintColor = .gray }
     }
 }
 
 #Preview {
     ExploreView()
+		.environment(LoginViewModel())
 }

@@ -30,8 +30,9 @@ final class MoviesViewModel {
 		isLoading = true
 		do {
 			popularMovies = try await repository.getPopularMovies()
+			popularMovies.forEach { print($0.title) }
 		} catch let error as NetworkError {
-			errorMessage = "An error occurred: \(error.localizedDescription)"
+			errorMessage = error.errorDescription ?? "An error occurred."
 		} catch {
 			errorMessage = "An error occurred: \(error.localizedDescription)"
 		}
