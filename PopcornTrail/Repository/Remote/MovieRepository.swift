@@ -8,16 +8,16 @@
 import Foundation
 
 /// Este protocolo define las operaciones disponibel para obtener películas
-protocol MovieRepositoryProtocol {
+protocol MovieRepositoryProtocol: Sendable {
 	/// Obtiene la lista de películas populares.
 	/// - Returns: Un array de `Movie`.
 	/// - Throws: `NetworkError` en caso de fallo en la solicitud o decodificación.
-	func getPopularMoview() async throws -> [Movie]
+	func getPopularMovies() async throws -> [Movie]
 }
 
 struct MovieRepository: MovieRepositoryProtocol {
 	/// Obtiene la lista de películas populares desde el API
-	func getPopularMoview() async throws -> [Movie] {
+	func getPopularMovies() async throws -> [Movie] {
 		let request = URLRequest.getPopularMovies()
 		
 		let (data, response) = try await URLSession.shared.data(for: request)
