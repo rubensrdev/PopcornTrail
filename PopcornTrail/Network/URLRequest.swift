@@ -79,4 +79,31 @@ extension URLRequest {
 		return request
 	}
 	
+	/// Crea una solicitud HTTP `GET` para obtener un listado de series más populares
+	static func getPopularSeries() -> URLRequest {
+		var request = URLRequest(url: .popularSeries())
+		request.httpMethod = "GET"
+		request.setValue("application/json", forHTTPHeaderField: "Accept")
+		request.setValue("Bearer \(APIConfig.shared.apiKey)", forHTTPHeaderField: "Authorization")
+		return request
+	}
+	
+	/// Crea una solicitud HTTP `GET` para obtener un listado de series más valoradas
+	static func getTopRatedSeries() -> URLRequest {
+		var request = URLRequest(url: .topRatedSeries())
+		request.httpMethod = "GET"
+		request.setValue("application/json", forHTTPHeaderField: "Accept")
+		request.setValue("Bearer \(APIConfig.shared.apiKey)", forHTTPHeaderField: "Authorization")
+		return request
+	}
+	
+	/// Crea una solicitud HTTP `GET` para obtener un listado de series en emisión
+	static func getOnTheAirSeries() -> URLRequest {
+		var request = URLRequest(url: .onAirSeries())
+		request.httpMethod = "GET"
+		request.setValue("application/json", forHTTPHeaderField: "Accept")
+		request.setValue("Bearer \(APIConfig.shared.apiKey)", forHTTPHeaderField: "Authorization")
+		return request
+	}
+	
 }
