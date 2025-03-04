@@ -16,11 +16,7 @@ struct MovieCarouselSectionView: View {
 		VStack(alignment: .leading) {
 
 			Text(title)
-				.font(.title2)
-				.fontDesign(.rounded)
-				.fontWeight(.semibold)
-				.frame(maxWidth: .infinity, alignment: .leading)
-				.padding(.leading, 16)
+				.sectionTextTitleStyle()
 			
 			ScrollView(.horizontal, showsIndicators: false) {
 				LazyHStack(spacing: 16) {
@@ -29,11 +25,25 @@ struct MovieCarouselSectionView: View {
 							PosterView(url: movie.posterURL)
 							Text(movie.title)
 								.textStyleForTitleWithPoster()
+							HStack(spacing: 4) {
+								Image(systemName: "star.fill")
+									.foregroundStyle(.yellow)
+								Text(String(format: "%.1f", movie.voteAverage))
+									.textStyleForRatingWithPoster()
+							}
+							Text(movie.releaseDate)
+								.textStyleForReleaseDateWithPoster()
+								
 						}
-						.padding(8)
+						.padding(12)
+						.background(.ultraThinMaterial)
+						.clipShape(
+							RoundedRectangle(cornerRadius: 12)
+						)
+						.shadow(color: .black.opacity(0.4), radius: 5, x: 0, y: 4)
 					}
 				}
-				.padding(.horizontal)
+				.padding()
 			}
 		}
 	}
