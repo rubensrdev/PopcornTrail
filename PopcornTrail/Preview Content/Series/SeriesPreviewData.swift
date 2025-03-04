@@ -103,4 +103,5 @@ extension Serie {
 	]
 	
 	/// URL de ejemplo para probar la carga de pósters en la preview.
-	static let posterURL = URL(string: "https://image.tmdb.org/t/p/w500/ineLOBPG8AZsluYwnkMpHRyu7L.jpg"
+	static let posterURL = URL(string: "https://image.tmdb.org/t/p/w500/ineLOBPG8AZsluYwnkMpHRyu7L.jpg")
+}
