@@ -25,6 +25,9 @@ struct MoviesView: View {
 				} else {
 					ScrollView {
 						MovieCarouselSectionView(title: "Popular Movies", movies: vm.popularMovies)
+						MovieCarouselSectionView(title: "Top Rated Movies", movies: vm.topRatedMovies)
+						MovieCarouselSectionView(title: "Now Playing Movies", movies: vm.nowPlayingMovies)
+						MovieCarouselSectionView(title: "Upcoming Movies", movies: vm.upcomingMovies)
 					}
 				}
 			}

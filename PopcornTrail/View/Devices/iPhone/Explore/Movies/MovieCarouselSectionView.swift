@@ -46,6 +46,7 @@ struct MovieCarouselSectionView: View {
 				.padding()
 			}
 		}
+		.padding(.bottom)
 	}
 }
 
