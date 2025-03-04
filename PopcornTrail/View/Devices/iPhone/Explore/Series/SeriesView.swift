@@ -22,7 +22,9 @@ struct SeriesView: View {
 						.padding()
 				} else {
 					ScrollView {
-						
+						SerieCarouselSectionView(title: "Popular Series", series: vm.popularSeries)
+						SerieCarouselSectionView(title: "Top Rated Series", series: vm.topRatedSeries)
+						SerieCarouselSectionView(title: "On The Air Series", series: vm.onTheAirSeries)
 					}
 				}
 			}
