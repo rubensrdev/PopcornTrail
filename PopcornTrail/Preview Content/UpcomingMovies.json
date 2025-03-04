@@ -1,0 +1,404 @@
+{
+    "dates": {
+      "maximum": "2025-03-26",
+      "minimum": "2025-03-05"
+    },
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/gFFqWsjLjRfipKzlzaYPD097FNC.jpg",
+        "genre_ids": [
+          28,
+          53,
+          80
+        ],
+        "id": 1126166,
+        "original_language": "en",
+        "original_title": "Flight Risk",
+        "overview": "A U.S. Marshal escorts a government witness to trial after he's accused of getting involved with a mob boss, only to discover that the pilot who is transporting them is also a hitman sent to assassinate the informant. After they subdue him, they're forced to fly together after discovering that there are others attempting to eliminate them.",
+        "popularity": 2568.332,
+        "poster_path": "/q0bCG4NX32iIEsRFZqRtuvzNCyZ.jpg",
+        "release_date": "2025-01-22",
+        "title": "Flight Risk",
+        "video": false,
+        "vote_average": 6.1,
+        "vote_count": 351
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/sc1abgWNXc29wSBaerrjGBih06l.jpg",
+        "genre_ids": [
+          27,
+          878,
+          53
+        ],
+        "id": 1084199,
+        "original_language": "en",
+        "original_title": "Companion",
+        "overview": "During a weekend getaway at a secluded lakeside estate, a group of friends finds themselves entangled in a web of secrets, deception, and advanced technology. As tensions rise and loyalties are tested, they uncover unsettling truths about themselves and the world around them.",
+        "popularity": 1222.243,
+        "poster_path": "/oCoTgC3UyWGfyQ9thE10ulWR7bn.jpg",
+        "release_date": "2025-01-22",
+        "title": "Companion",
+        "video": false,
+        "vote_average": 7.069,
+        "vote_count": 616
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/iXU87IdtNsYt7n6OigPJBDdbFf1.jpg",
+        "genre_ids": [
+          10751,
+          16,
+          35,
+          28
+        ],
+        "id": 774370,
+        "original_language": "en",
+        "original_title": "Dog Man",
+        "overview": "When a faithful police dog and his human police officer owner are injured together on the job, a harebrained but life-saving surgery fuses the two of them together and Dog Man is born. Dog Man is sworn to protect and serve—and fetch, sit and roll over. As Dog Man embraces his new identity and strives to impress his Chief, he must stop the pretty evil plots of feline supervillain Petey the Cat.",
+        "popularity": 722.633,
+        "poster_path": "/89wNiexZdvLQ41OQWIsQy4O6jAQ.jpg",
+        "release_date": "2025-01-24",
+        "title": "Dog Man",
+        "video": false,
+        "vote_average": 7.7,
+        "vote_count": 133
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/iKXXPYBWQ0B6BMRHAFbg3wKafWb.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 549509,
+        "original_language": "en",
+        "original_title": "The Brutalist",
+        "overview": "Escaping post-war Europe, visionary architect László Toth arrives in America to rebuild his life. On his own in a strange new country, a wealthy industrialist recognizes his talent. But power and legacy come at a heavy cost...",
+        "popularity": 1065.25,
+        "poster_path": "/vP7Yd6couiAaw9jgMd5cjMRj3hQ.jpg",
+        "release_date": "2024-12-20",
+        "title": "The Brutalist",
+        "video": false,
+        "vote_average": 7.1,
+        "vote_count": 685
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/b3mdmjYTEL70j7nuXATUAD9qgu4.jpg",
+        "genre_ids": [
+          16,
+          14,
+          12
+        ],
+        "id": 823219,
+        "original_language": "lv",
+        "original_title": "Straume",
+        "overview": "A solitary cat, displaced by a great flood, finds refuge on a boat with various species and must navigate the challenges of adapting to a transformed world together.",
+        "popularity": 885.787,
+        "poster_path": "/imKSymKBK7o73sajciEmndJoVkR.jpg",
+        "release_date": "2024-08-29",
+        "title": "Flow",
+        "video": false,
+        "vote_average": 8.3,
+        "vote_count": 1266
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/uKb22E0nlzr914bA9KyA5CVCOlV.jpg",
+        "genre_ids": [
+          18,
+          10749,
+          14
+        ],
+        "id": 402431,
+        "original_language": "en",
+        "original_title": "Wicked",
+        "overview": "In the land of Oz, ostracized and misunderstood green-skinned Elphaba is forced to share a room with the popular aristocrat Glinda at Shiz University, and the two's unlikely friendship is tested as they begin to fulfill their respective destinies as Glinda the Good and the Wicked Witch of the West.",
+        "popularity": 751.017,
+        "poster_path": "/xDGbZ0JJ3mYaGKy4Nzd9Kph6M9L.jpg",
+        "release_date": "2024-11-20",
+        "title": "Wicked",
+        "video": false,
+        "vote_average": 6.9,
+        "vote_count": 1856
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/hfTyu2VPBqLRPo2DauW8q7bh9bm.jpg",
+        "genre_ids": [
+          10751,
+          12,
+          35
+        ],
+        "id": 516729,
+        "original_language": "en",
+        "original_title": "Paddington in Peru",
+        "overview": "Paddington travels to Peru to visit his beloved Aunt Lucy, who now resides at the Home for Retired Bears. With the Brown Family in tow, a thrilling adventure ensues when a mystery plunges them into an unexpected journey through the Amazon rainforest and up to the mountain peaks of Peru.",
+        "popularity": 425.621,
+        "poster_path": "/1ffZAucqfvQu36x1C49XfOdjuOG.jpg",
+        "release_date": "2024-11-08",
+        "title": "Paddington in Peru",
+        "video": false,
+        "vote_average": 6.8,
+        "vote_count": 184
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/tkRDTu9hyWgaBSSzfkYDCZYd1kV.jpg",
+        "genre_ids": [
+          18,
+          53
+        ],
+        "id": 974576,
+        "original_language": "en",
+        "original_title": "Conclave",
+        "overview": "After the unexpected death of the Pope, Cardinal Lawrence is tasked with managing the covert and ancient ritual of electing a new one. Sequestered in the Vatican with the Catholic Church’s most powerful leaders until the process is complete, Lawrence finds himself at the center of a conspiracy that could lead to its downfall.",
+        "popularity": 705.54,
+        "poster_path": "/m5x8D0bZ3eKqIVWZ5y7TnZ2oTVg.jpg",
+        "release_date": "2024-10-25",
+        "title": "Conclave",
+        "video": false,
+        "vote_average": 7.1,
+        "vote_count": 1497
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/nNF4ZB0UDL4qAUjQfbYZDq3Ck7J.jpg",
+        "genre_ids": [
+          27,
+          53
+        ],
+        "id": 710295,
+        "original_language": "en",
+        "original_title": "Wolf Man",
+        "overview": "With his marriage fraying, Blake persuades his wife Charlotte to take a break from the city and visit his remote childhood home in rural Oregon. As they arrive at the farmhouse in the dead of night, they're attacked by an unseen animal and barricade themselves inside the home as the creature prowls the perimeter. But as the night stretches on, Blake begins to behave strangely, transforming into something unrecognizable.",
+        "popularity": 363.204,
+        "poster_path": "/jTPBMPTgk9zOUGSkWcoOGbX8cTi.jpg",
+        "release_date": "2025-01-15",
+        "title": "Wolf Man",
+        "video": false,
+        "vote_average": 6.5,
+        "vote_count": 464
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/dWkdmxIkH9y23s9v1PjQFhTGIwo.jpg",
+        "genre_ids": [
+          28,
+          18,
+          53,
+          10752
+        ],
+        "id": 1043905,
+        "original_language": "en",
+        "original_title": "Dirty Angels",
+        "overview": "During the United States' 2021 withdrawal from Afghanistan, a group of female soldiers posing as medical relief are sent back in to rescue a group of kidnapped teenagers caught between ISIS and the Taliban.",
+        "popularity": 318.044,
+        "poster_path": "/3O3qSGmjRGc10hMwFul8WDxKE5t.jpg",
+        "release_date": "2024-12-11",
+        "title": "Dirty Angels",
+        "video": false,
+        "vote_average": 6.193,
+        "vote_count": 207
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/ag66gJCiZ06q1GSJuQlhGLi3Udx.jpg",
+        "genre_ids": [
+          27,
+          53
+        ],
+        "id": 1138194,
+        "original_language": "en",
+        "original_title": "Heretic",
+        "overview": "Two young missionaries are forced to prove their faith when they knock on the wrong door and are greeted by a diabolical Mr. Reed, becoming ensnared in his deadly game of cat-and-mouse.",
+        "popularity": 252.726,
+        "poster_path": "/fr96XzlzsONrQrGfdLMiwtQjott.jpg",
+        "release_date": "2024-10-31",
+        "title": "Heretic",
+        "video": false,
+        "vote_average": 7.162,
+        "vote_count": 1214
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/j9uruwRe9qM8RnP758dF7ISB8Bj.jpg",
+        "genre_ids": [
+          18,
+          36
+        ],
+        "id": 1000837,
+        "original_language": "pt",
+        "original_title": "Ainda Estou Aqui",
+        "overview": "In 1971, military dictatorship in Brazil reaches its height. The Paiva family — Rubens, Eunice, and their five children — live in a beachside house in Rio, open to all their friends. One day, Rubens is taken for questioning and does not return.",
+        "popularity": 327.782,
+        "poster_path": "/qNLMPY3KLrYgTX2QZ5iEwwOqyRz.jpg",
+        "release_date": "2024-09-19",
+        "title": "I'm Still Here",
+        "video": false,
+        "vote_average": 7.953,
+        "vote_count": 393
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/2P0PUkQ1tNHNYTEmtbBmM8MfXBG.jpg",
+        "genre_ids": [
+          878,
+          35,
+          18
+        ],
+        "id": 696506,
+        "original_language": "en",
+        "original_title": "Mickey 17",
+        "overview": "Mickey Barnes, an “expendable” employee, is sent on a human expedition to colonize the ice world Niflheim. After one iteration dies, a new body is regenerated with most of his memories intact. With one regeneration, though, things go very wrong.",
+        "popularity": 423.368,
+        "poster_path": "/lrCcovGRcuv8Z1v3ae1ZH5Ird05.jpg",
+        "release_date": "2025-02-28",
+        "title": "Mickey 17",
+        "video": false,
+        "vote_average": 7.7,
+        "vote_count": 16
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/6dC7ULfiutxwEAs7LjWHL2Tc7Zv.jpg",
+        "genre_ids": [
+          27,
+          35
+        ],
+        "id": 1124620,
+        "original_language": "en",
+        "original_title": "The Monkey",
+        "overview": "When twin brothers find a mysterious wind-up monkey, a series of outrageous deaths tear their family apart. Twenty-five years later, the monkey begins a new killing spree forcing the estranged brothers to confront the cursed toy.",
+        "popularity": 268.742,
+        "poster_path": "/yYa8Onk9ow7ukcnfp2QWVvjWYel.jpg",
+        "release_date": "2025-02-14",
+        "title": "The Monkey",
+        "video": false,
+        "vote_average": 6.0,
+        "vote_count": 128
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/u2eA9pqi1q3DvevT7RuDuJHxxBT.jpg",
+        "genre_ids": [
+          18,
+          53
+        ],
+        "id": 974950,
+        "original_language": "fr",
+        "original_title": "Emilia Pérez",
+        "overview": "Rita, an underrated lawyer working for a large law firm more interested in getting criminals out of jail than bringing them to justice, is hired by the leader of a criminal organization.",
+        "popularity": 393.985,
+        "poster_path": "/7seqaCaaXDNUHOx4DqwpoOH8pPa.jpg",
+        "release_date": "2024-08-21",
+        "title": "Emilia Pérez",
+        "video": false,
+        "vote_average": 6.8,
+        "vote_count": 1384
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/3QeuagbU1YARTkGrPS4dvYSQGZi.jpg",
+        "genre_ids": [
+          10402,
+          18
+        ],
+        "id": 799766,
+        "original_language": "en",
+        "original_title": "Better Man",
+        "overview": "Follow Robbie Williams' journey from childhood, to being the youngest member of chart-topping boyband Take That, through to his unparalleled achievements as a record-breaking solo artist – all the while confronting the challenges that stratospheric fame and success can bring.",
+        "popularity": 230.269,
+        "poster_path": "/fbGCmMp0HlYnAPv28GOENPShezM.jpg",
+        "release_date": "2024-12-06",
+        "title": "Better Man",
+        "video": false,
+        "vote_average": 7.648,
+        "vote_count": 256
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/zxi6WQPVc0uQAG5TtLsKvxYHApC.jpg",
+        "genre_ids": [
+          16,
+          14,
+          12
+        ],
+        "id": 980477,
+        "original_language": "zh",
+        "original_title": "哪吒之魔童闹海",
+        "overview": "After the Tribulation, although the souls of Ne Zha and Ao Bing were preserved, their physical bodies would soon be completely destroyed. Tai Yi Zhen Ren plans to use the Seven Colored Lotus to reshape their physical forms. But in the process of reshaping, they encounter numerous difficulties. Where will the fate of Ne Zha and Ao Bing go?",
+        "popularity": 226.098,
+        "poster_path": "/cb5NyNrqiCNNoDkA8FfxHAtypdG.jpg",
+        "release_date": "2025-01-29",
+        "title": "Ne Zha 2",
+        "video": false,
+        "vote_average": 7.7,
+        "vote_count": 110
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/mKIxSo3p1QKlsdegcOwapcbiV74.jpg",
+        "genre_ids": [
+          28,
+          80,
+          53
+        ],
+        "id": 604685,
+        "original_language": "en",
+        "original_title": "Den of Thieves 2: Pantera",
+        "overview": "Big Nick is back on the hunt in Europe and closing in on Donnie, who is embroiled in the treacherous and unpredictable world of diamond thieves and the infamous Panther mafia, as they plot a massive heist of the world's largest diamond exchange.",
+        "popularity": 191.886,
+        "poster_path": "/p6Zz0gETvkC33Pst1h6sh9Js6x.jpg",
+        "release_date": "2025-01-08",
+        "title": "Den of Thieves 2: Pantera",
+        "video": false,
+        "vote_average": 6.7,
+        "vote_count": 296
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/evFChfYeD2LqobEJf8iQsrYcGTw.jpg",
+        "genre_ids": [
+          28,
+          80,
+          53,
+          18
+        ],
+        "id": 1182387,
+        "original_language": "en",
+        "original_title": "Armor",
+        "overview": "Armored truck security guard James Brody is working with his son Casey transporting millions of dollars between banks when a team of thieves led by Rook orchestrate a takeover of their truck to seize the riches. Following a violent car chase, Rook soon has the armored truck surrounded and James and Casey find themselves cornered onto a decrepit bridge.",
+        "popularity": 147.943,
+        "poster_path": "/pnXLFioDeftqjlCVlRmXvIdMsdP.jpg",
+        "release_date": "2024-10-30",
+        "title": "Armor",
+        "video": false,
+        "vote_average": 5.5,
+        "vote_count": 172
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/gmYpUbSGOwmZnevCr0iwLEYdpVB.jpg",
+        "genre_ids": [
+          27,
+          53
+        ],
+        "id": 978796,
+        "original_language": "en",
+        "original_title": "Bagman",
+        "overview": "For centuries and across cultures, parents have warned their children of the legendary Bagman, who snatches innocent children and stuffs them into his vile, rotting bag—never to be seen again. Patrick McKee narrowly escaped such an encounter as a boy, which left him with lasting scars throughout his adulthood. Now, Patrick’s childhood tormentor has returned, threatening the safety of his wife Karina and son Jake.",
+        "popularity": 179.579,
+        "poster_path": "/53IK9rlZJbwFYbNnJZiLq7UWxkT.jpg",
+        "release_date": "2024-09-20",
+        "title": "Bagman",
+        "video": false,
+        "vote_average": 6.3,
+        "vote_count": 253
+      }
+    ],
+    "total_pages": 55,
+    "total_results": 1095
+  }
