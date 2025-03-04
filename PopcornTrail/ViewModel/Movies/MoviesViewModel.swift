@@ -30,6 +30,7 @@ final class MoviesViewModel {
 		self.repository = repository
 	}
 	
+	/// Carga los listados de películas que se muestran en la UI
 	@MainActor
 	func loadAllTypesOfMovies() async {
 		isLoading = true
