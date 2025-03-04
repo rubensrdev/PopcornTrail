@@ -31,6 +31,8 @@
 		458C81A02D7702E500D449EF /* NowPlayingMovies.json in Resources */ = {isa = PBXBuildFile; fileRef = 458C819F2D7702E500D449EF /* NowPlayingMovies.json */; };
 		458C81A32D7702EB00D449EF /* TopRatedMovies.json in Resources */ = {isa = PBXBuildFile; fileRef = 458C81A12D7702EB00D449EF /* TopRatedMovies.json */; };
 		458C81A42D7702EB00D449EF /* UpcomingMovies.json in Resources */ = {isa = PBXBuildFile; fileRef = 458C81A22D7702EB00D449EF /* UpcomingMovies.json */; };
+		458C81A72D770DF500D449EF /* Serie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C81A62D770DF500D449EF /* Serie.swift */; };
+		458C81A92D770E2B00D449EF /* SerieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C81A82D770E2B00D449EF /* SerieResponse.swift */; };
 		45E9FBF02D6737C600ED3786 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E9FBEF2D6737C600ED3786 /* KeychainManager.swift */; };
 		45E9FBF52D688D7700ED3786 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E9FBF42D688D7700ED3786 /* ExploreView.swift */; };
 		45E9FBF92D688E2F00ED3786 /* SeriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E9FBF82D688E2F00ED3786 /* SeriesView.swift */; };
@@ -71,6 +73,8 @@
 		458C819F2D7702E500D449EF /* NowPlayingMovies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NowPlayingMovies.json; sourceTree = "<group>"; };
 		458C81A12D7702EB00D449EF /* TopRatedMovies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TopRatedMovies.json; sourceTree = "<group>"; };
 		458C81A22D7702EB00D449EF /* UpcomingMovies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UpcomingMovies.json; sourceTree = "<group>"; };
+		458C81A62D770DF500D449EF /* Serie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serie.swift; sourceTree = "<group>"; };
+		458C81A82D770E2B00D449EF /* SerieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieResponse.swift; sourceTree = "<group>"; };
 		45AF6C412D5A67CB00A29620 /* PopcornTrail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopcornTrail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E9FBEF2D6737C600ED3786 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		45E9FBF42D688D7700ED3786 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
@@ -132,6 +136,15 @@
 				45FEA46E2D5A6E8000DBA159 /* LogoInLoginView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		458C81A52D770DED00D449EF /* Series */ = {
+			isa = PBXGroup;
+			children = (
+				458C81A62D770DF500D449EF /* Serie.swift */,
+				458C81A82D770E2B00D449EF /* SerieResponse.swift */,
+			);
+			path = Series;
 			sourceTree = "<group>";
 		};
 		45AF6C382D5A67CB00A29620 = {
@@ -229,6 +242,7 @@
 		45FEA4752D5A738F00DBA159 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				458C81A52D770DED00D449EF /* Series */,
 				45E9FBFC2D68936F00ED3786 /* Movies */,
 				452AB4212D639365001026A8 /* Auth */,
 			);
@@ -431,6 +445,7 @@
 				452AB42C2D639937001026A8 /* URL.swift in Sources */,
 				458BBE812D663F9A00EE8F22 /* WebAuthManager.swift in Sources */,
 				45E9FBFE2D68943B00ED3786 /* Movie.swift in Sources */,
+				458C81A92D770E2B00D449EF /* SerieResponse.swift in Sources */,
 				456196412D64973B003CFD85 /* NetworkError.swift in Sources */,
 				456196432D649B40003CFD85 /* NetworkInteractor.swift in Sources */,
 				456196452D64A1D6003CFD85 /* NetworkService.swift in Sources */,
@@ -438,6 +453,7 @@
 				4561963F2D648F7C003CFD85 /* URLRequest.swift in Sources */,
 				458C81962D75BF3C00D449EF /* MovieRepositoryPreview.swift in Sources */,
 				458C819C2D75C98E00D449EF /* PosterView.swift in Sources */,
+				458C81A72D770DF500D449EF /* Serie.swift in Sources */,
 				4546BEB82D662A1E00EBB238 /* AuthenticationRepository.swift in Sources */,
 				458C81922D75A28B00D449EF /* MoviesViewModel.swift in Sources */,
 			);

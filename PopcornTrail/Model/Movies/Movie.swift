@@ -56,6 +56,7 @@ struct Movie: Codable, Identifiable, Hashable {
 }
 
 extension Movie {
+	/// URL completa del póster de la película.
 	var posterURL: URL? {
 		guard let posterPath else { return nil }
 		return URL(string: "https://image.tmdb.org/t/p/w500\(posterPath)")
