@@ -12,7 +12,7 @@ import Foundation
 final class SeriesViewModel {
 	
 	/// Repositorio de series
-	let seriesRepository: SeriesRepositoryProtocol
+	let repository: SeriesRepositoryProtocol
 	/// Lista de series populares
 	var popularSeries: [Serie] = []
 	/// Lista de series más valoradas
@@ -24,8 +24,8 @@ final class SeriesViewModel {
 	/// Mensaje de error
 	var errorMessage = ""
 	
-	init(seriesRepository: SeriesRepositoryProtocol = SeriesRepository()) {
-		self.seriesRepository = seriesRepository
+	init(repository: SeriesRepositoryProtocol = SeriesRepository()) {
+		self.repository = repository
 	}
 	
 	/// Carga los listados de series que se muestran en la UI
@@ -42,7 +42,7 @@ final class SeriesViewModel {
 	@MainActor
 	private func loadPopularSeries() async {
 		do {
-			popularSeries = try await seriesRepository.getPopularSeries()
+			popularSeries = try await repository.getPopularSeries()
 		} catch let error as NetworkError {
 			errorMessage = error.errorDescription ?? "An error occurred."
 		} catch {
@@ -54,7 +54,7 @@ final class SeriesViewModel {
 	@MainActor
 	private func loadTopRatedSeries() async {
 		do {
-			topRatedSeries = try await seriesRepository.getTopRatedSeries()
+			topRatedSeries = try await repository.getTopRatedSeries()
 		} catch let error as NetworkError {
 			errorMessage = error.errorDescription ?? "An error occurred."
 		} catch {
@@ -66,7 +66,7 @@ final class SeriesViewModel {
 	@MainActor
 	private func loadOnTheAirSeries() async {
 		do {
-			onTheAirSeries = try await seriesRepository.getOntheAirSeries()
+			onTheAirSeries = try await repository.getOntheAirSeries()
 		} catch let error as NetworkError {
 			errorMessage = error.errorDescription ?? "An error occurred."
 		} catch {

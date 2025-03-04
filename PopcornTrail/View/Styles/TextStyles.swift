@@ -23,6 +23,8 @@ extension Text {
 			.font(.headline)
 			.fontDesign(.rounded)
 			.multilineTextAlignment(.center)
+			.lineLimit(2)
+			.truncationMode(.tail)
 			.frame(width: 100)
 	}
 	
