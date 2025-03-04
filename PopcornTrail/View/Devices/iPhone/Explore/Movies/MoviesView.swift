@@ -41,7 +41,7 @@ struct MoviesView: View {
 			}
 		}
 		.task {
-			await vm.loadPopularMovies()
+			await vm.loadAllTypesOfMovies()
 		}
 	}
 }
