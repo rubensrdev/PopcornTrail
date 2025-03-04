@@ -33,6 +33,21 @@ extension URL {
 	static func popularMovies() -> URL {
 		APIConfig.shared.baseURL.appending(path: MoviesEndpoints.popular.rawValue)
 	}
+	
+	/// Construcción de URL para consultar películas más valoradas
+	static func topRatedMovies() -> URL {
+		APIConfig.shared.baseURL.appending(path: MoviesEndpoints.topRated.rawValue)
+	}
+	
+	/// Construcción de URL para consultar películas en cartelera
+	static func nowPlayingMovies() -> URL {
+		APIConfig.shared.baseURL.appending(path: MoviesEndpoints.nowPlaying.rawValue)
+	}
+	
+	/// Construcción de URL para consultar los próximos estrenos de películas
+	static func upcomingMovies() -> URL {
+		APIConfig.shared.baseURL.appending(path: MoviesEndpoints.upcoming.rawValue)
+	}
 }
 
 extension URLQueryItem {

@@ -9,4 +9,7 @@ import Foundation
 
 enum MoviesEndpoints: String {
 	case popular = "/movie/popular"
+	case topRated = "/movie/top_rated"
+	case nowPlaying = "/movie/now_playing"
+	case upcoming = "/movie/upcoming"
 }

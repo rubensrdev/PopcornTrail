@@ -51,4 +51,32 @@ extension URLRequest {
 		request.setValue("Bearer \(APIConfig.shared.apiKey)", forHTTPHeaderField: "Authorization")
 		return request
 	}
+	
+	/// Crea una solicitud HTTP `GET` para obtener un listado de películas más valoradas
+	static func getTopRatedMovies() -> URLRequest {
+		var request = URLRequest(url: .topRatedMovies())
+		request.httpMethod = "GET"
+		request.setValue("application/json", forHTTPHeaderField: "Accept")
+		request.setValue("Bearer \(APIConfig.shared.apiKey)", forHTTPHeaderField: "Authorization")
+		return request
+	}
+	
+	/// Crea una solicitud HTTP `GET` para obtener un listado de películas en cartelera
+	static func getNowPlayingMovies() -> URLRequest {
+		var request = URLRequest(url: .nowPlayingMovies())
+		request.httpMethod = "GET"
+		request.setValue("application/json", forHTTPHeaderField: "Accept")
+		request.setValue("Bearer \(APIConfig.shared.apiKey)", forHTTPHeaderField: "Authorization")
+		return request
+	}
+	
+	/// Crea una solicitud HTTP `GET` para obtener un listado de los próximos estrenos de películas
+	static func getUpcomingMovies() -> URLRequest {
+		var request = URLRequest(url: .popularMovies())
+		request.httpMethod = "GET"
+		request.setValue("application/json", forHTTPHeaderField: "Accept")
+		request.setValue("Bearer \(APIConfig.shared.apiKey)", forHTTPHeaderField: "Authorization")
+		return request
+	}
+	
 }
